@@ -17,22 +17,23 @@ const Footer = () => {
         <div className="row justify-content-center g-5">
           <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
             <div className="container-fluid">
+              <form class="row g-3">
               <div className="row">
                 <div className="col-12">
                     <h6>Email</h6>
                     <div class="mb-3">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter a valid Email Address'/>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter a valid Email Address' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
                     </div>
                 </div>
                 <div className="col-12">
                     <h6>Name</h6>
                     <div class="mb-4">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter your Name'/>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter your Name' required pattern="^[a-zA-Z\d]{5,25}$"/>
                     </div>
                 </div>
                 <div className="col-12">
                 <div class="mb-4">
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select" aria-label="Default select example" required>
                     <option selected>Item</option>
                     <option value="1">Item1</option>
                     <option value="2">Item2</option>
@@ -45,25 +46,26 @@ const Footer = () => {
                 <div className="col-6">
                     <h6 className="pb-2">Date</h6>
                     <div class="mb-3">
-                    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="col-12"/>
+                    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="col-12" required/>
                     </div>
                 </div>
                 <div className="col-6">
                     <h6>phone</h6>
                     <div class="mb-4">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter your phone (+91 9876543210)'/>
+                      <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter your phone (+91 9876543210)' required pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$"/>
                     </div>
                 </div>
                 <div className="col-12">
                 <div class="mb-3">
                   <h6>Message</h6>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message"></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message" required></textarea>
                 </div>
                 </div>
                 <div className="col-4">
                   <button>Submit</button>
                 </div>
               </div>
+              </form>
             </div>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 SecondCol">
