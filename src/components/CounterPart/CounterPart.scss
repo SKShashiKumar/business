@@ -1,0 +1,37 @@
+@import '../BasicPartials';
+
+.CounterPart{
+    padding: 5%;
+    h1{
+        font-size: 3rem;
+        font-family: $fontPlay;
+        font-weight: 600;
+    }
+    p{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 1rem;
+        font-family: $fontOpenSans;
+        line-height: 1.5;
+    }
+}
+
+
+.CounterCards{
+    background-color: $Gray;
+    padding:10% 5%;
+    border-top: 10px solid $Green;
+    h1{
+        font-size: 4rem;
+        font-family: $fontRobo;
+        font-weight: 900;
+    }
+    .SubHeading{
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .Desc{
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,75 @@
+@import '../BasicPartials';
+
+.BannerPage{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/BannerBG.jpeg');
+        background-position: 50% 50%;
+        height: 90vh;
+        // background-repeat: no-repeat;
+            .ImageRow{
+                padding: 10% 10% 0% 10%;
+                img{
+                    height: 300px;
+                    width: 400px;
+                }    
+            }
+            .ContentRow{
+                top: 200px;
+                position: absolute;
+                color: white;
+                padding: 10% 5%;
+                h1{
+                    padding-top:5%;
+                    font-size: 8.125rem;
+                    font-family: $fontPlay;
+                }
+                h2{
+                    // padding-top: 5%;
+                    font-size: 5rem;
+                }
+                p{
+                    padding-top:5%;
+                    padding-left: 15%;
+                    padding-right: 15%;
+                    font-size: 1.3rem;
+                    font-family: $fontRobo;
+                    line-height: 2;
+                    font-weight: 300;
+                }
+            }
+
+            @media screen and (max-width:1199px) {
+
+            }
+
+
+            @media screen and (max-width:991px) {
+
+            }
+
+            @media screen and (max-width:767px) {
+                .ContentRow{
+                    h1{
+                        font-size: 5rem;
+                    }
+                    h2{
+                        font-size: 4rem;
+                    }
+                    p{
+                        font-size: 1.2rem !important;
+                    }
+                }
+            }
+            @media screen and (max-width:576px) {
+                .ContentRow{
+                    h1{
+                        font-size: 4rem;
+                    }
+                    h2{
+                        font-size: 4rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+}

@@ -1,0 +1,55 @@
+@import '../BasicPartials';
+
+.HowDoesItWork{
+    background-color: $Gray;
+    padding: 2% 5% 4% 5%;
+    .MainHeading{
+        padding: 3% 5%;
+        h1{
+            font-size: 3rem;
+            font-weight: 600;
+            font-family: $fontPlay;
+            color: black;
+        }
+    }
+    .ArrowImg{
+        img{
+            height: 130px;
+            width: 130px;
+        }
+    }
+
+    .MainCards{
+        .col-xs-12{
+            padding: 10px;
+        }
+    }
+    @media screen and (max-width:991px) {
+        .ArrowImg{
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+    @media screen and (max-width:767px) {
+        .MainHeading{
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .ArrowImg{
+            img{
+                height: 130px;
+                width: 130px;
+            }
+        }
+    }
+}
+.cards{
+    padding:20px 20px;
+    background-color: white;
+    h1{
+        font-size: 2rem;
+    }
+}

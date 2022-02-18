@@ -1,0 +1,43 @@
+.Brands{
+    padding: 5%;
+    .Brands1,.Brands2,.Brands4,.Brands5{
+        img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    .Brands3{
+        img{
+            height: 150px;
+            width: 190px;
+        }
+    }
+    @media screen and (max-width:991px) {
+        .Brands1,.Brands2,.Brands4,.Brands5{
+            img{
+                height: 120px;
+                width: 120px;
+            }
+        }
+        .Brands3{
+            img{
+                height: 120px;
+                width: 160px;
+            }
+        }
+    }
+    @media screen and (max-width:767px) {
+        .Brands1,.Brands2,.Brands4,.Brands5{
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .Brands3{
+            img{
+                height: 100px;
+                width: 140px;
+            }
+        }
+    }
+}

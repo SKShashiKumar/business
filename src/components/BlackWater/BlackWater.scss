@@ -1,0 +1,63 @@
+@import '../BasicPartials';
+
+.BlackWater{
+    padding-top:4%;
+    padding-bottom:4%;
+    .InHeading{
+        background-image: url('../assets/blackImg.jpg') ;
+        padding: 5%;
+        h1{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            color: white;
+            text-align: center;
+            font-family: $fontPlay;
+            font-size: 3.5rem;
+        }
+        @media screen and (max-width:767px) {
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+    .ContentRow{
+        padding: 2% 0%;
+        .SampleFirstCol{
+            p{
+                font-size: 1rem;
+                line-height: 1.8;
+                color: rgba(56, 55, 55,0.8);
+            }
+            .SampleHeading{
+                font-size: 1.4rem;
+                font-weight: 300;
+                color: black;
+            }
+
+        }
+        .SampleSecondCol{
+            p{
+                font-size: 1rem;
+                line-height: 1.8;
+                color: rgba(56, 55, 55,0.8);
+            }
+            .SampleHeading{
+                font-size: 1.4rem;
+                font-weight: 300;
+                color: black;
+            }
+            hr{
+                height: 10px;
+                color: $Green;
+                opacity: 1;
+            }
+        }
+        .LastCol{
+            p{
+                font-size: 1rem;
+                line-height: 1.8;
+                color: rgba(56, 55, 55,0.8);
+            }
+        }
+    }
+}

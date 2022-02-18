@@ -1,0 +1,54 @@
+@import '../BasicPartials';
+
+.LifeCoaching{
+    padding: 3% 10% 3% 10%;
+    .FirstCol{
+    padding: 3% 3% 3% 3%;
+        
+        h1{
+            font-size: 3rem;
+            font-family: $fontPlay;
+            font-weight: 600;
+            color: black;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        p{
+            padding-top: 2%;
+            padding-bottom: 2%;
+            font-family: $fontOpenSans;
+            font-size: 1rem;
+        }
+    }
+
+    .SecondCol{
+        padding: 10px;
+        .MainCard{
+            background-color: $Gray;
+            padding: 3% 8% 3% 8%;
+            .Heading{
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                line-height: 1.6;
+            }
+            ul{
+                padding: 0%;
+                margin: 0%;
+                list-style: none;
+
+                li{
+                    &:before {
+                        content:"\2713\0020";
+                        font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+                        color: white;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                    line-height: 2.5;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+}
